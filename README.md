@@ -27,7 +27,7 @@ I used these programming languages/frameworks. First is of course, SQL; the use 
 
 ### Conflicts in creating my project
 
-As I just said, I attempt to use React, but setting it up make it harder (e.g. fetching the data using FETCH), it took me about an hour and half just to set it up, so I just used HTML and Jinja. In CSS choosed tailwind over bootstrap framework because I want to try it, since one of my friends know tailwind and I got interested in it. I also struggled picking which database should I use; I am struggling to pick between using postgresSQL or sqlite3, I choose sqlite3 because it is in the lesson and it is comfortable. I also struggled picking an ORM (Object–relational mapping, i.e. converting code to SQL). I also created this on Vercel, but it was not easy to deploy it, so I decided to use Heroku.
+As I just said, I attempt to use React, but setting it up make it harder (e.g. fetching the data using FETCH), it took me about an hour and half just to set it up, so I just used HTML and Jinja. In CSS choosed tailwind over bootstrap framework because I want to try it, since one of my friends know tailwind and I got interested in it. I also struggled picking which database should I use; I am struggling to pick between using postgresSQL or sqlite3, I choose sqlite3 because it is in the lesson and it is comfortable. I also struggled picking an ORM (Object–relational mapping, i.e. converting code to SQL). I also created this on Vercel, but it was not easy to deploy it, so I decided to use Heroku. I also modified some of my code to suite the environment.
 
 ## How to use it.
 

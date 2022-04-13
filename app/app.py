@@ -2,7 +2,7 @@ from flask import Flask, request, session, render_template, redirect
 from flask_session import Session
 from cs50 import SQL
 from werkzeug.security import check_password_hash, generate_password_hash
-from helpers import login_required, faculty_required
+from helpers.helpers import login_required, faculty_required
 app = Flask(__name__)
 
 # Ensure templates are autoreloaded
