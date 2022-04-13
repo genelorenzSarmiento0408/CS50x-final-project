@@ -9,8 +9,6 @@ app = Flask(__name__)
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 db = SQL("sqlite:///app/school.db")
-db.execute("CREATE TABLE mult (m INTEGER)")
-db.execute("DROP TABLE mult")
 print("Success in connecting the database")
 
 # Configure session to use filesystem (instead of signed cookies)
