@@ -1,0 +1,37 @@
+/*
+* This CSS is created by: Gene Lorenz Sarmiento (v1.0.0)
+*/
+
+input,
+select {
+  width: 10rem;
+}
+
+@media only screen and (min-width: 400px) {
+  input,
+  select {
+    width: 16rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #333;
+    color: white;
+  }
+  input {
+    color: black;
+  }
+  .navbar,
+  option,
+  select {
+    color: #333;
+    background-color: #19bc55;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: white;
+    color: #555;
+  }
+}

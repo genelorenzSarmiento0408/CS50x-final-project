@@ -1,0 +1,53 @@
+{% extends "layout.html" %} {% block content %}
+<div class="flex flex-col items-center content-center">
+  <div class="text-center text-2xl">Add a Class</div>
+  Be sure your information is correct
+  <form
+    class="my-5 rounded flex flex-col gap-4"
+    action="/add_subject"
+    method="post"
+  >
+    <input
+      type="text"
+      class="rounded-lg"
+      name="subject"
+      placeholder="Subject"
+      required
+      autocomplete="off"
+    />
+    <input
+      type="text"
+      class="rounded-lg"
+      name="grade"
+      placeholder="Grade"
+      required
+      autocomplete="off"
+    />
+    <input
+      type="text"
+      class="rounded-lg"
+      name="section"
+      placeholder="Section"
+      required
+      autocomplete="off"
+    />
+    <input
+      type="text"
+      class="rounded-lg"
+      name="link"
+      placeholder="A Link that connects your class"
+      autocomplete="off"
+    />
+    <input
+      type="text"
+      class="rounded-lg"
+      name="time"
+      placeholder="Time of your class"
+      required
+      autocomplete="off"
+    />
+
+    <input type="submit" class="bg-blue-500 rounded py-3" />
+  </form>
+</div>
+{% endblock %}
