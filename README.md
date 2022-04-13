@@ -15,13 +15,9 @@ About my final project in CS50. My final project is all about class identifier; 
 
 ## History
 
-<hr/>
-
 The history of my final project and why I make this project. So, I already completed labs and psets, and I cant think of any ideas of what should I made in my final project. One day my classmate ask for a link, then someone responsed with "you should try to backread with the GC", then someone send ALL the Zoom links (with subject) for our classes, then it inspires me to create a website with all the needed for an online class (Time, links, teacher).
 
 ## Programming languages/frameworks used
-
-<hr/>
 
 I used these programming languages/frameworks. First is of course, SQL; the use of it is to store data in the database, I choose **SQL** because it is one of the lectures of CS50 (week 7 and week 9). Second is **Python** specifically the Framework named Flask, it is used for the backend and to connect the database and the client (the thing you see). Third is HTML, CSS, and JS, these "frontend" libraries are just difficult to handle with that so I add **Tailwind CSS** to my CSS to make my life much more easier, then on HTML I add Jinja for my templating system, it can make your life easier. In JS, I dont add any frameworks (like Frontend frameworks, e.g. React, Angular, Vue, etc.) since it will probably make my life more harder than expected.
 
@@ -31,13 +27,9 @@ As I just said, I attempt to use React, but setting it up make it harder (e.g. f
 
 ## How to use it.
 
-<hr/>
-
 To use it, first you need to register/login to your corresponding school role, or just find a subject without registering/logging in. After that, you can now see your subject/s.
 
 ## Especial thanks to:
-
-<hr/>
 
 Margaux Panelo (Checking the design of my website), to my classmates, and to all CS50 and Scrimba's Discord community.
 
