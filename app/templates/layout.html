@@ -36,10 +36,7 @@
       defer
     ></script>
     <!--PWA: https://github.com/umluizlima/flask-pwa/tree/master-->
-    <script
-      src="{{ url_for('static', filename='logo class identifier GLS.svg') }}"
-      defer
-    ></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
     <!--Inspiration of: https://flowbite.com/docs/components/navbar/-->
     <nav class="bg-[#19bc55] px-2 sm:px-4 py-2.5 navbar">
       <div
@@ -47,7 +44,7 @@
       >
         <a href="/" class="flex items-center">
           <img
-            src="/static/logo class identifier GLS.svg"
+            src="{{ url_for('static', filename='logo class identifier GLS.svg') }}"
             class="mr-3 h-20 sm:h-12 w-full md:block md:w-auto mr-auto text-center text-xl"
             alt="Logo of class identifier of Gene Lorenz Sarmiento"
           />
