@@ -37,7 +37,8 @@ To use it, first you need to register/login to your corresponding school role, o
 
 ## Especial thanks to:
 
-Margaux Panelo (Checking the design of my website), to my classmates, and to all CS50 and Scrimba's Discord community.
+Margaux Panelo (Checking the design of my website), to my classmates, and to all CS50 and Scrimba's Discord community. /
+And also to Luiz Lima for the PWA in Flask
 
 <!-- This README is so anti-climatic -->
 

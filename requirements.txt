@@ -1,5 +1,6 @@
 cs50
 flask
+flask_sslify
 werkzeug
 flask_session
 gunicorn
