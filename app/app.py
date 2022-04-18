@@ -26,9 +26,9 @@ def apology(m, code):
 def has_numbers(inputString):
     return any(char.isdigit() for char in inputString)
 
-# @app.route('/manifest.json')
-# def manifest():
-#     return send_from_directory('static', 'manifest.json')
+@app.route('/manifest.json')
+def manifest():
+    return send_from_directory('static', 'manifest.json')
 
 
 # @app.route('/sw.js')
