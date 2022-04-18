@@ -10,6 +10,8 @@ if (window.location.pathname === "/register") {
       grade.style.display = "none";
       section.style.display = "none";
     } else {
+      grade.setAttribute("required", "required");
+      section.setAttribute("required", "required");
       grade.style.display = "block";
       section.style.display = "block";
     }

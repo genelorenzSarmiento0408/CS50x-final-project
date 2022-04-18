@@ -21,11 +21,14 @@ select {
   input {
     color: black;
   }
-  .navbar,
+  .navbar {
+    color: #333;
+    background-color: #19bc55;
+  }
   option,
   select {
     color: #333;
-    background-color: #19bc55;
+    background-color: white;
   }
 }
 

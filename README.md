@@ -35,11 +35,31 @@ As I just said, I attempt to use React, but setting it up make it harder (e.g. f
 
 To use it, first you need to register/login to your corresponding school role, or just find a subject without registering/logging in. After that, you can now see your subject/s.
 
+### Routes:
+
+`/register`
+
+The route to register the user
+
+`/login`
+
+The route that displays a form when accessing via GET (i.e. clicking a website)
+
+`/logout`
+
+Logouts the user (if logged in)
+
+`/add_subject`
+
+Add a subject to the class (only if you are a teacher or principal)
+
+`/find_class`
+
+Find a class (non-logged in users can access this too! Although limited)
+
 ## Especial thanks to:
 
-Margaux Panelo (Checking the design of my website), to my classmates, and to all CS50 and Scrimba's Discord community. /
-And also to Luiz Lima for the PWA in Flask
-
-<!-- This README is so anti-climatic -->
+Margaux Panelo (Checking the design of my website), to my classmates, and to all CS50 and Scrimba's Discord community. \
+And also to Luiz Lima for the PWA in Flask.
 
 And this was Class identifier
