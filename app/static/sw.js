@@ -7,13 +7,6 @@ importScripts(
 if (workbox) {
   console.log(`Yay! Workbox is loaded 🎉`);
 
-  workbox.precaching.precacheAndRoute([
-    {
-      url: "/",
-      revision: "1",
-    },
-  ]);
-
   workbox.routing.registerRoute(
     /\.(?:js|css)$/,
     workbox.strategies.staleWhileRevalidate({
