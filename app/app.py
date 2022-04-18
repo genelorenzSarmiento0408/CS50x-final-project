@@ -39,6 +39,10 @@ def page_not_found(error):
 @app.route("/", methods=["GET"])
 @login_required
 def index():
+    if session.get("user_id") is None:
+        # https://flask.palletsprojects.com/en/2.1.x/quickstart/#redirects-and-errors
+        return redirect(url_for('login'))
+
     school_role = session["school_role"]
     id = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", id)[0]['username']
