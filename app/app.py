@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, request, session, render_template, redirect, url_for
+from flask import Flask, request, session, render_template, redirect, url_for, send_from_directory, make_response
 from flask_session import Session
 from cs50 import SQL
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -19,10 +19,6 @@ app.config["SESSION_PERMANENT"] = False
 app.config["SESSION_TYPE"] = "filesystem"
 Session(app)
 
-
-from app.controller import pwa
-app.register_blueprint(pwa.bp)
-
 def apology(m, code):
     return render_template("apology.html", error=m), code
 
@@ -30,6 +26,17 @@ def apology(m, code):
 def has_numbers(inputString):
     return any(char.isdigit() for char in inputString)
 
+
+@app.route('/manifest.json')
+def manifest():
+    return send_from_directory('static', 'manifest.json')
+
+
+@app.route('/sw.js')
+def service_worker():
+    response = make_response(send_from_directory('static', 'sw.js'))
+    response.headers['Cache-Control'] = 'no-cache'
+    return response
 # Create custom error: https://flask.palletsprojects.com/en/2.1.x/quickstart/#redirects-and-errors
 @app.errorhandler(404)
 def page_not_found(error):
