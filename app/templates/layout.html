@@ -35,8 +35,7 @@
       src="{{ url_for('static', filename='js/index.js') }}"
       defer
     ></script>
-    <!--PWA: https://github.com/umluizlima/flask-pwa/tree/master-->
-    <script src="{{ url_for('static', filename='js/app.js') }}" defer></script>
+
     <!--Inspiration of: https://flowbite.com/docs/components/navbar/-->
     <nav class="bg-[#19bc55] px-2 sm:px-4 py-2.5 navbar">
       <div
@@ -69,5 +68,7 @@
       </div>
     </nav>
     <main>{% block content %}{% endblock %}</main>
+    <!--PWA: https://github.com/umluizlima/flask-pwa/tree/master-->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
   </body>
 </html>
