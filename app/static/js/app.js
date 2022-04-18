@@ -3,7 +3,7 @@
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker
-        .register("/static/sw.js")
+        .register("/sw.js")
         .then(function (registration) {
           console.log("Service Worker Registered");
           return registration;
@@ -24,7 +24,6 @@ window.addEventListener("beforeinstallprompt", (e) => {
   console.log("beforeinstallprompt event fired");
   e.preventDefault();
   deferredPrompt = e;
-  btnAdd.style.visibility = "visible";
 });
 
 window.addEventListener("appinstalled", (evt) => {
