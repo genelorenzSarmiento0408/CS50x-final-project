@@ -1,6 +1,6 @@
 import os
 
-from flask import Flask, request, session, render_template, redirect
+from flask import Flask, request, session, render_template, redirect, url_for
 from flask_session import Session
 from cs50 import SQL
 from werkzeug.security import check_password_hash, generate_password_hash
@@ -39,8 +39,6 @@ def page_not_found(error):
 @app.route("/", methods=["GET"])
 @login_required
 def index():
-    if session.get("user_id") is None:
-        return redirect("/login")
     school_role = session["school_role"]
     id = session["user_id"]
     username = db.execute("SELECT username FROM users WHERE id = ?", id)[0]['username']
