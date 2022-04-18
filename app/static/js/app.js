@@ -5,7 +5,7 @@
     window.addEventListener("load", () => {
       // register the service worker
       navigator.serviceWorker
-        .register("/static/sw.js")
+        .register("/sw.js")
         .then(function (registration) {
           console.log("Service Worker Registered");
           return registration;
