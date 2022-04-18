@@ -1,7 +1,9 @@
-// https://github.com/umluizlima/flask-pwa/tree/master
+// Modified https://github.com/umluizlima/flask-pwa/tree/master
 (function () {
   if ("serviceWorker" in navigator) {
+    // On load
     window.addEventListener("load", () => {
+      // register the service worker
       navigator.serviceWorker
         .register("/sw.js")
         .then(function (registration) {
@@ -18,12 +20,8 @@
   }
 })();
 
-let deferredPrompt;
-
 window.addEventListener("beforeinstallprompt", (e) => {
   console.log("beforeinstallprompt event fired");
-  e.preventDefault();
-  deferredPrompt = e;
 });
 
 window.addEventListener("appinstalled", (evt) => {
