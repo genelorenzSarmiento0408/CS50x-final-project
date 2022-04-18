@@ -5,7 +5,7 @@
     window.addEventListener("load", () => {
       // register the service worker
       navigator.serviceWorker
-        .register("/sw.js")
+        .register("/static/sw.js")
         .then(function (registration) {
           console.log("Service Worker Registered");
           return registration;
@@ -22,6 +22,12 @@
 
 window.addEventListener("beforeinstallprompt", (e) => {
   console.log("beforeinstallprompt event fired");
+<<<<<<< HEAD
+=======
+  e.preventDefault();
+  deferredPrompt = e;
+  btnAdd.style.visibility = "visible";
+>>>>>>> parent of 5c8162b (ee)
 });
 
 window.addEventListener("appinstalled", (evt) => {
