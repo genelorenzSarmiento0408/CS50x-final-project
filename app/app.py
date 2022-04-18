@@ -33,8 +33,7 @@ def manifest():
 
 @app.route('/sw.js')
 def service_worker():
-    response = make_response(send_from_directory('static', 'sw.js'))
-    return response
+    return send_from_directory('static', 'sw.js')
 
 # Create custom error: https://flask.palletsprojects.com/en/2.1.x/quickstart/#redirects-and-errors
 @app.errorhandler(404)
