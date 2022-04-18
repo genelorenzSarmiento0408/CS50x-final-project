@@ -26,7 +26,6 @@ def apology(m, code):
 def has_numbers(inputString):
     return any(char.isdigit() for char in inputString)
 
-
 @app.route('/manifest.json')
 def manifest():
     return send_from_directory('static', 'manifest.json')
@@ -35,8 +34,8 @@ def manifest():
 @app.route('/sw.js')
 def service_worker():
     response = make_response(send_from_directory('static', 'sw.js'))
-    response.headers['Cache-Control'] = 'no-cache'
     return response
+
 # Create custom error: https://flask.palletsprojects.com/en/2.1.x/quickstart/#redirects-and-errors
 @app.errorhandler(404)
 def page_not_found(error):
